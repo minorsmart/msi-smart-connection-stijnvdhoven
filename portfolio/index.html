@@ -1,51 +1,341 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mijn Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Smart Industry</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav nav" role="tablist">
-                <a class="nav-item nav-link" data-toggle="tab" href="#start" id="start-tab" role="tab" aria-controls="start" aria-selected="true"><i class="fa fa-fw fa-home"></i>Start <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" data-toggle="tab" href="#business" id="business-tab" role="tab" aria-controls="business" aria-selected="true"><i class="fa fa-handshake-o"></i> Business</a>
-                <a class="nav-item nav-link" data-toggle="tab" href="#connection" id="connection-tab" role="tab" aria-controls="connection" aria-selected="true"><i class="fa fa-code"></i> Connection</a>
-                <a class="nav-item nav-link" data-toggle="tab" href="#technology" id="technology-tab" role="tab" aria-controls="technology" aria-selected="true"><i class="fa fa-cog"></i> Technology</a>
-                <a class="nav-item nav-link" data-toggle="tab" href="#project" id="project-tab" role="tab" aria-controls="project" aria-selected="true"><i class="fa fa-rocket"></i> Project</a>
-            </div>
-        </div>
-    </nav>
-    <div class="tab-content container">
-        <div class="tab-pane active fade show" id="start" role="tabpanel" aria-labelledby="start-tab">
-            <p>I'm in Start</p>
-        </div>
-        <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
-            <p>I'm in Business</p>
-        </div>
-        <div class="tab-pane fade" id="connection" role="tabpanel" aria-labelledby="connection-tab">
-            <p>I'm in Connection</p>
-        </div>
-        <div class="tab-pane fade" id="technology" role="tabpanel" aria-labelledby="technology-tab">
-            <p>I'm in Technology</p>
-        </div>
-        <div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab">
-            <p>I'm in Project</p>
-        </div>
+<html>
+<title>Portfolio Stijn van den Hoven</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+    <p class="w3-text-grey">Stijn van den Hoven</p>
+  </div>
+  <div class="w3-bar-block"> 
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+    <a href="#Smart Start" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Smart Start</a> 
+    <a href="#Smart Start Volwassenheid Industry 4.0" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Smart Start Volwassenheid Industry 4.0</a>
+    <a href="#Smart Business" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Smart Business</a>
+    <a href="#Smart Business-TOM3 model" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Smart Business-TOM3 model</a>
+    <a href="#Smart Project" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Smart Project</a>
+    <a href="#Smart Technology" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Smart Technology</a>
+    <a href="#Smart Connection" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Smart Connection</a>
+  </div>
+  <div class="w3-panel w3-large">
+<a href="https://www.linkedin.com/in/stijn-van-den-hoven-132542175/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio Smart Industry">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Foto portfolio.jpg" alt="" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Wie ben ik?</b></p>
+        <p>Ik ben Stijn van den Hoven, ik ben 19 jaar en woon in Ulvenhout. Ik studeer bedrijfskunde en in mijn vrije tijd ga ik graag wielrennen en wandelen. Daarnaast ben ik altijd geïnteresseerd in de werking van techniek en de nieuweste innovaties.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Smart Industy.png" alt="" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Minor Smart Industry</b></p>
+        <p>Vanaf het begin van mijn opleiding heb ik al interesse in de technische aspecten binnen het bedrijsleven. Daarom heb ik ook gekozen voor deze minor, om mijn kennis op dit gebied te vebreden.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="Avans hogeschool.jpg" alt="" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Mijn opleiding</b></p>
+        <p>Ik zit in het derde jaar van mijn opleiding bedrijfskunde aan Avans hogeschool in Breda. Deze opleiding heb ik gekozen vanwege mijn interesse in het bedrijfsleven en de veelzijdigheid van de opleiding.</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Smart Start section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="Smart Start"><b>Smart Start</b></h4>
+  <div class="w3-row-padding w3-padding-16" id="Smart Start">
+    <div class="w3-col m6">
+      <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>Smart Start</b></h4>
+    <p>Tijdens de workshops Smart Start kregen wij wekelijks een opdracht. Deze opdracht bestond meestal uit een literatuuronderzoek naar een van de thema's van Smart Industry. Onderstaand kunt u delen van weekopdracht 1 en weekopdracht 6 bekijken.</p>
+    <hr>
+    <p>Weekopdracht 1, blog kruispunten Smart Industry en bedrijfskunde</p> 
+            <linkrel="stylesheet" type="text/css" href="css/style.css"
+            class="block">
+            <p>Gedurende de eerste workshop van smart start is er een aantal onderdelen van Smart Industry aan bod gekomen. Deze waren te onderscheiden in de volgende vier categorieën: waarde propositie, processen, menselijk kapitaal en organisatie en informatie. Maar wat is Smart Industry nou eigenlijk? Zoals tijdens behandeld bestaat dit uit de eerdergenoemde aspecten. Het draait om het integreren van de nieuwste ICT en communicatietechnologie in de gehele waardeketen. Het doel hiervan is niet alleen het efficiënter en flexibeler maken van een proces, maar ook moet de klantwaarde in het achterhoofd worden gehouden.  
+<br>
+                Dit sluit dan ook goed aan op mijn opleiding bedrijfskunde. Niet alleen staat bij bedrijfskunde het efficiënter en effectiever maken van processen centraal, ook is het creëren van waarde voor de klant belangrijk. Dit is bijvoorbeeld in de literatuur van lean green belt naar voren gekomen. Waarin het “slanker” maken van een proces centraal staat. In deze literatuur staat echter de communicatie tussen de verschillende onderdelen van een productie lijn niet voorop, hier is in vroegere literatuur rondom lean vaak nog menselijk handelen voor nodig. Hierop geeft Smart Industry een mooie aanvulling door het integreren van internet communicatie en informatie technologie in de gehele waarde keten. <br> 
+                
+                Tijdens het nader onderzoeken van de nieuwste artikelen rondom lean six sigma kom je al snel uit bij het gebruik van industrie 4.0 en IoT in bijvoorbeeld het supply chain management. Dit is dan ook zeker te gebruiken binnen mijn eigen opleiding. Niet alleen bij lean six sigma zijn er kruispunten met mijn eigen opleiding.  Zo sluit het vak informatiemanagement dat wordt verzorgd op mijn opleiding ook goed aan bij de minor Smart Industry. Dit vak staat in het teken van informatie stromen en voorzieningen binnen bedrijven. Onderwerpen als big data, proces mining en artificial intelligence worden hier behandeld, met de nadruk op de functie die ze vervullen maar hoe dat wordt gedaan wordt achterwegen gelaten. Deze minor zal mij meer inzicht gaan geven in hoe deze technologieën werken binnen een organisatie. Al deze nieuwe kennis zal voor een mooie voorsprong op de arbeidsmarkt zorgen ten opzichte van andere bedrijfskundige. 
+    
+    </p>
+<br>
+        <p>Hier kunt u meer informatie vinden over behaalde competenties, waaronder: Bussines case over de volwassenheid van he C2OstCo, de smart journey en over mijn ervaringen van het afgelopen semester</p>
+<hr>
+<p>In de laatste weekopdracht van Smart Start is te zien hoe er aanzienlijke progressie is geboekt op het gebied van Smart Research. In dit onedzoek is een instrument opgesteld om een innovatieve cultuur in een organisatie te meten. Smart Start is ondanks mijn eerdere ervaring met literatuuronderzoek van waarde geweest. Zo heb ik geleerd om kritischer te kijken naar het gebruik van bronnen en ik heb mijn wijze van feedback geven verbeterd door elke weer op serieuze wijze naar se onderzoeken van medestudeten te kijken. Wilt u onderstaand onderzoek helemaal lezen klil dan <a href="https://docs.google.com/document/d/1tdBMLvLcpIz4IFo_62aZuIohGEFeZmL3960c8zYr7hc/edit?usp=sharing">hier</a>.</p>
+<br>
+<p>Weekopdracht 6</p>
+<p>Communicatie
+    PDCA-cyclus
+    In deze paragraaf wordt het communicatieproces aan de hand van de PDCA-cyclus beschreven (Managementplatform, 2014). 
+    <br>
+    <br>
+    <b>Plan</b>
+    Hierin wordt het doel besproken van de communicatie. Het doel was om de relatie tussen industry 4.0 en cultuur te onderzoeken. Daarbij werd er ook verwacht dat er een instrument ontworpen zou worden die toegepast zou kunnen worden op de projectorganisatie die meet in hoeverre het bedrijf klaar is voor industry 4.0. Hierbij is de doelgroep van het artikel voornamelijk personen die zijn geïnteresseerd in het onderzoeken en meten van bedrijfsculturen.
+    <br>
+    <br>
+    <b>Do</b>
+    In de tweede fase staat het uitvoeren van de activiteiten centraal. Het doel zou moeten worden behaald als er wetenschappelijke informatie gezocht zou worden over de relatie tussen cultuur en industry 4.0. Uit deze informatie zijn aspecten uit gerold die helpen om een instrument te ontwerpen die de gereedheid van een bedrijf ten opzichte van industry 4.0 zou kunnen meten. 
+    <br>
+    <br>
+    <b>Check</b>
+    In deze fase staat het evalueren centraal. Om een zo objectief en wetenschappelijk mogelijk artikel te kunnen schrijven, is het nodig dat de bronnen van een dusdanige kwaliteit zijn. Hiervoor is gebruik gemaakt van een CRAAP-test. Hiermee kan de lezer, die interesse hebben aan gefundeerde resultaten worden overtuigd van de validiteit en betrouwbaarheid van het onderzoek.
+    <br>
+    <br>
+    <b>Act</b>
+    In deze laatste fase wordt gereageerd op de uitkomsten van de controles en analyses uit de check fase. Omdat de bronnen van een dusdanige objectieve en wetenschappelijke kwaliteit zijn, is het mogelijk om de resultaten op een dusdanige objectieve en wetenschappelijke manier te beschrijven. Als dit niet was geweest, hadden andere bronnen gezocht moeten worden. Mijn communicatiedoel om informatie op een zo objectieve en wetenschappelijke manier mogelijk te verstrekken is dus behaald. 
+    </p>
+    <p>
+        <b>Resultaten Deelvraag 1 Wat is de relatie tussen bedrijfscultuur en Smart Industry?</b>
+        <br>
+        Het onderzoek van Andreas Schumacher kijkt naar het bepalen van de volwassenheid van een organisatie op het gebied van industry 4.0. Er is een negental dimensies opgesteld waarmee de volwassenheid van de organisatie kan worden bepaald. Een van deze aspecten is ook de cultuur die heerst in een organisatie. Dit laat zien dat de cultuur in een organisatie wel degelijk in relatie staat met Smart Industry. Het is echter maar een klein deel tot de bereidheid voor industry 4.0. (Hana Mohelska 2018)
+        <br>
+        <br>
+        Het onderzoek van Machado versterkt deze bevinding verder. Ook dit onderzoek heeft gekeken naar de volwassenheid van organisaties op het gebied van industry 4.0. Zij hebben bedrijven gecategoriseerd en gekeken waar zij slecht in presteerde. Een van deze aspecten was het ontbreken van een geschikte bedrijfscultuur. Verder is het heel belangrijk om een bedrijf te hebben waarbij iedereen elkaar vertrouwd. Uit onderzoek van J Zaki, Paul blijkt dat vertrouwen heel belangrijk is voor innovatie. Wat deze bedrijfscultuur omvat is te lezen onder deelvraag 2.
+        <br>
+        <br>
+        
+        <b>Deelvraag 2 Wat zijn de kenmerken van een bedrijfscultuur die passen bij de ambities van Smart Industry?</b>
+        <br>
+        Machado stelt dat de cultuur die nodig is voor het succesvol functioneren van industry 4.0. Deze bestaan vooral uit het de vrijheid om innovatief te denken en handelen, medewerkers de eigen productie laten begrijpen, het doorbreken van de grenzen tussen verschillende functies en het creëren van een bedrijfscultuur. Volgens dit onderzoek moet deze cultuur zorgen voor meer zekerheid bij medewerkers over de ‘nieuwe’ technologieën. Daarnaast is het belangrijk dat de organisatie een passend data beleid heeft. 
+        <br>
+        <br>
+        Wallach stelt dat er geen slechte of goede bedrijfscultuur is. Een bedrijfscultuur is wel op zijn effectiefst als deze de missie, visie en doelstellingen van een organisatie ondersteunt. Er wordt onderscheid gemaakt in drie hoofdzakelijke culturen binnen bedrijven. De bureaucratie waar een hiërarchische cultuur heerst en er duidelijke taken en verantwoordelijkheden zijn, de innovatiecultuur waar creativiteit en resultaatgerichtheid centraal staan en de ondersteunende cultuur waarin vertrouwen, vriendschap en teamwork centraal staan. Het onderzoek laat zien dat een innovatieve cultuur goed aansluit bij smart industry, dat draait om nieuwe en onbekende technologieën implementeren. 
+        Deelvraag 3 Hoe kan dit meetbaar gemaakt worden?
+        Het meetbaar maken van een bedrijfscultuur wordt door middel van een instrument gedaan. In dit instrument wordt met het verzamelde kennis materiaal een aantal belangrijke punten opgesteld die worden beoordeeld van 1 tot 5 waarbij 1 niet tot weinig betekent en er bij 5 sprake is van volledige implementatie. Deze criteria zijn opgesteld met de informatie hierboven. Het meetinstrument is opgesteld aan de hand van de verzamelde data in het literatuur onderzoek. 
+        </p>
+        <img src="Instrument cultuur.png" style="width:70%;" class="w3-round"/>
+    <br>
+    <p><b>Communicatie doelgroepen</b></p>
+    <p>Zoals bovenstaand is te zien zijn de weekopdrachten voor veschillenden doelgroepen geschreven. Waar weekopdracht 1 gericht was op het informeren van andere studenten die deze minor wilde volgen is er bij weekopdracht 6 de communicatie proces gedefinieerd. Na de eerste zes weken met workshops zijn we aan de slag gegaan met het project, waar ik met veel verschillende doelgroepen te maken kreeg. Dit waren om te beginnen: de opdrachtgever, mede-studenten, docenten en externe personen. Voor de communicatie naar de opdrachtgever vond er wekelijks een vergadering plaats waar de stand van zaken werd besproken, hier leek het ons het best om voornamelijk de resultaten te bespreken. Zoals ook is aangegeven in mijn Smart Journey wilde ik meer ervaring opdoen met het communiceren met verschillende doelgroepen. Dit begon met het overleggen met de oudstudenten van deze minor die het project Defensie vorig semester hadden gedaan. Hier leek het de beste communicatiemethode om niet te veel voor te bereiden om zo hun ervaringen en proces boven tafel te krijgen, dit is een hele ander aanpak dan met de vergaderingen met de opdrachtgevers die we uitgebreid voorbereiden. Daarnaast zijn we in de laatste weken van de minor ook bezig geweest met een promomtiefilpmje voor het seminar waar ik in de begin fase een bijdrage bij heb geleverd. De video is gemonteerd door Marieke Pas. </p>
+    <br>
+    <p>Terug kijkend op de gekozen communicatie stijlen ben ik tevreden met de methodes die ik gehanteerd heb. Wel zal ik in de toekomst bij vergaderingen met opdrachtgevers de informatie is beknopter houden zodat zij alleen de relevante kennis en informatie ontvangen. Daarnaast vind ik dat ik soms niet actief genoeg meedeed aan de vergaderingen en dus te veel op de achtergrond bleef, dit wist ik van mijzelf maar afgelopen semester heeft wel voor nieuwe inzichten gezorgd. Zoals dat een les voor iedereen waardevoller wordt als ook ik meer van me laat horen en een bijdrage lever. Ik wil dan ook in de toekomst van mijn eigen opleiding een actievere rol gaan vervullen, in vergaderingen en in lessen en workshops.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0M1W31s4gCY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br> 
+    <p><b>Professionele ontwikkeling</b></p>
+    <p>Voor deze competentie heb ik een Smart Journey opgesteld, waarin in een planning over de gehele periode van de minor, staat aan welke Smart Start competenties ik wilde gaan werken, ook zijn er persoonlijke doelstellingen opgesteld gekoppeld aan een week en met een uitleg van de aanpak. In de <a href="https://docs.google.com/spreadsheets/d/1vuwX5xLSffoR_9vRhbCgTGx-PeOGkr0CjbE_wCLe3Vo/edit?usp=sharing">Smart Journey</a> zijn persoonlijk doelen opgesteld, deze zijn ook besproken met medestudenten en waar nodig aangepast, ook heb ik hen om feedback gevraagd en aan de hand van de feedback kritisch gekeken naar de doelstellingen. Ik ben me heel bewust van mijn valkuilen en mijn sterktes. Zoals ik eerder had genoemt is een van mijn zwaktes dat ik te veel op de achtergrond blijf, hier heb ik dit semester tijdens de vergaderingen al mijn best op gedaan door eerder te zeggen wat ik denk. Ook gaat dit steeds beter binnen de projectgroep waar ik vanuit verschillende rollen een bijdrage lever aan het proces. Een van mijn sterktes is het dat ik in alle rust kan communiceren en mijn boodschap tot te kern kan beperken en daardoor de aandacht van toehoorders kan bewaren. Dit hiermee ook een kans die ik kan benutten door gebruik te maken van deze sterkte. Dit is dan ook verwerkt in de Smart Journey. Als ik terug kijk naar deze doelen ben ik voor een groot deel tevreden, ik had graag zoals eerder benoemd meer willen bijdragen aan workshops maar het leveren van mijn bijdrage in projectwerk is zeker gelukt. </p>
+    <body>
+
+        <!-- Smart Start Volwassenheid Industry 4.0 Section-->
+        <div class="w3-container w3-padding-large w3-grey">
+            <h4 id="Smart Start Volwassenheid Industry 4.0"><b>Volwassenheid Industry 4.0 binnen Defensie</b></h4>
+           Naast het reguliere onderzoek heeft er ook gezamelijk een onderzoek plaatsgevonden naar de volwassenheid van Defensie op het gebied van Industry 4.0/Smart Industry. Dit onderzoek is meegenomen tijdens de interviews die plaatsvonden voor het reguliere onderzoek. Voor het gehele document kunt u <a href="https://docs.google.com/document/d/15iIXG1TO-3pXhAru2l72wkOv_Y6bw9IXJsp_fGWavBA/edit?usp=sharing">hier</a> klikken. 
+         <hr>
+
+    
+<!-- Smart Business Section -->
+<div class="w3-container w3-padding-large w3-grey">
+    <h4 id="Smart Business"><b>Smart Business</b></h4>
+    
+ <p>Als bedrijfskundige heb ik al veel ervaring met business. Daarom ga ik mij proberen verder te ontwikkelen in te aspecten die aan bod komen. Dit begint bij het bepalen wat ik met deze minor wil bereiken voor mijzelf. Dit heb ik tijdens de eerste workshop gedaan door een persona te maken aan de hand van een template. Als ik terug kijk naar dit model zie ik een aantal dingen die terug zijn gekomen in de minor, zo heb ik te maken gehad met techniek waar ik niet veel van begreep maar dit zorgde niet voor demotivaite maar juist voor meer energie om het juist deze nieuwe dingen te leren daarom heb ik ook voor de minor gekozen.</p> 
+  <img src="PerosonaSmartIndustry.jpg" style="width:70%;" class="w3-round"/>
+<br>  
+<hr>
+
+    <!-- Smart Business-TOM3 model Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="Smart Business-TOM3 model"><b>Smart Business-TOM3 model</b></h4>
+    <img src="TOM3model.png" alt="Me" style="width:70%">
+    <br> 
+ <p>Bovenstaand is een aangepast TOM3 model te zien die tijdens een van de gastlessen van Smart Business is voorgelegd. Ik en mijn projectteam vonden dit een zeer geschikt model om toe te passen bij ons project voor Smart Business. Na overleg met de opdrachtgever is besloten een aantal aanpassingen te maken aan het model, vanwege de complexiteit van de koninklijke landmacht. Zo zijn Mens, Methode en Machine vervangen door: operationeel, functioneel en technisch. Ook zijn tactisch en operationeel op de X-as omgedraaid in verband met de structuur binnen Defensie. Het maken van een TOM3 model gaf mij een nieuwe uitdaging naast het maken van de BMC voor Defensie, waarvan ik als bedrijfskundige al vaak heb gemaakt in het verleden. Alle onderdelen benoemd in het model zijn uiteraard onderbouwd dit is terug te vinden in het eindrapport van de projectgroep. </p>
+
+ <br> 
+ <p>Het TOM3 model wordt gebruikt om de implicaties van de verandering in kaart te brengen. Echter is door de door ons bedacht prototype zo goed als transparant voor de gebruiker, wanneer de datacompressie een maal werkt zal er niet veel te merken zijn buiten de verbeterde capaciteit van de verbinding. Dit betekent niet dat het TOM3 model niet van waarde is geweest want de bewustwording van de transparantie van de verandering is ook een antwoord op de vraag welke implicaties er met de innovatie meekomen. Als we kijken naar de gevolgen voor de keten van het C2OstCo dan zien we dat er ook hier niet veel veranderd, de veranderingen die plaats vinden zijn in positieve zin. Het C2OstCo zorgt namelijk voor een volledig functionerende computerinfrastrctuur in alle omstandigheden, deze netwerken worden gebruikt door de militairen in het veld. Als zij meer capaciteit op bijvoorbeeld de SatCom verbinding hebben is dat alleen maar in hun voordeel.</p>
+<br> 
+<img src="BMC C2OstCo.png" alt="Me" style="width:70%">
+<p>Bovenstaand ziet u het BMC dat is gemaakt voor de opdrachtgever. Deze BMC is ook deels gebruikt bij het invullen van het TOM3 model en is ook gebruikt om de impicaties van de verandering in kaart te brengen. Echter is ook hier geen verandering in het businessmodel te vinden. De gevolgen van het protorype en advies dat wij hebben gegeven is niet te zien in het businessmodel. De benodigde veranderingen beperken zich na de implementatie tot het toevoegen van een module over datacompressie tijdens de opleiding van de relevante militairen.</p>
+
+  <!-- Smart Project Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="Smart Project"><b>Smart Project</b></h4>
+  <p>Bij dit onderdeel kunt u meer lezen over het project waar ik in samenwerking met Levi van Hoogstraten en Marieke Pas het afgelopen semester aan heb gewerkt. Dit project was voor het Command And Control Ondersteuningscommando (C2OstCo) bij de Koninklijke Landmacht. Onze opdrachtgever heeft naar aanleiding van de resultaten van de vorige projectgroep ons de opdracht gegeven onderzoek te doen naar geschikte compressie technieken voor de Wide Area Network (WAN) middelen van het C2OstCo. Deze opdracht was een mooie uitdaging voor mij als bedrijfskundige, ik had namelijk geen enkele voorkennis over de werking van datacompressie en wilde graag een kijkje hebben in de wereld van de Landmacht. Ik zag dit project als een mooie gelegenheid om samen met een informatica student en andere bedrijfskundige onze kennis te delen en van elkaar te leren. Zo heb ik in samenwerking met de andere bedrijfskundige kennis gedeeld over het opstellen van een volledig PvA met de informatica. Ik heb gedurende het project mijn best gedaan om vanuit vercshillende projectrollen zoals vermeld in SP51. Dit heb ik gedaan door meer op te steken van de informatica kant van het project, door het meekijken en meehelpen bij deze student. Maar ook door te wisselen van leiding geven binnen de projectgroep naar meer volgen en uitvoeren binnen de groep.</p>  
+<br> 
+<p><b>Proffesionele ontwikkeling</b></p>
+<p>Gedurende deze Minor ben ik bezig geweest met mijn professionele ontwikkeling. Dit is onder andere gedaan door voorafgaand aan de projectperiode een aantal doelen op te stellen, deze kunt u lezen onder Smart Start, Smart Journey. Daarnaast heb ik door actief mee te doen tijdens de intervisies ook gewerkt aan deze ontwikkeling. Om te beginnen met de veranderkleuren van Caluwe, deze zijn uitgevoerd en daarna vergeleken per project lid. Onderstaand ziet u de resultaten van mijn Caulwe test. Opvallend is dat de twee kleuren waar ik het laagst scoor de kleuren zijn die het meest bij onze opdrachtgever past. Dit zou tot conflict kunnen leiden wanneer een verandering daadwerkelijk moet worden geimplementeerd. Toch heeft dit niet geleid tot enige vorm van conflict omdat wij natuurlijk niet betrokken zijn bij de daadwerkelijke implementatie van het advies en prototype. Wel is deze kennis nog toegepast in het project door een advies over de implementatie uit te brengen in het rapport, deze is gebasseerd op de veranderkleuren van Caluwe en de veranderstappen van Kotter. </p>
+<br>
+<img src="Veranderkleuren Caluwe.png" alt="Me" style="width:70%">
+<br>
+<p>Ook is er door middel van het bespreken van mijn persoonlijke doelstellingen met medestudenten (peers) verder nagedacht over mijn ontwikkeling gedurende deze minor. Ook heb ik tijdens een van de intervisie door het maken van een model waar je de dingen die je leuk vond, minder leuk, wat je meer had gewild en wat je hebt geleerd. Dit is te zien in onderstaande afbeeling. Door dit op te schrijven kreeg ik voormijzelf helder wat ik tot nu toe al had geleerd en dat zorgt voor extra motivatie.</p>
+<img src="Intervisie Witek.png" alt="Me" style="width:70%">
+<br>
+<p>Het onderzoek en onderzoeksplan zijn naderhand gevalueerd door middel van het opstellen van een discussie. Hier worden de validitei, betrouwbaarheid en mogelijke gebreken van het onderzoek behandeld.</p>
+<p>De resultaten van het onderzoek laten zien dat met het prototype aanzienlijke winsten zijn te behalen. Dit resultaat komt niet direct overeen met de resultaten van het literatuuronderzoek. Naar aanleiding van dit literatuur- en labonderzoek is gebleken dat niet alle technieken geschikt waren voor Defensie. Hierdoor is na overleg besloten om door middel van een programma dat pdf uit kan pakken en aparte onderdelen kan comprimeren. De resultaten die behaald zijn voldoen aan de verwachtingen en laten zien dat er eenvoudig winst met deze compressie valt te behalen. 
+<br>
+<br>
+    Het literatuuronderzoek heeft alle bekende en bewezen technieken overwogen en beoordeeld op geschiktheid van Defensie. Hiermee is het onderzoek wel valide maar niet volledig generaliseerbaar omdat de selectie gemaakt voor het labonderzoek is gebasseerd op de geschiktheid binnen de Nederlandse Koninklijke landmacht. Dit betekent dat de resulataten en conclusie niet gelden voor andere personen of groepen. Ook is het onderzoek, zoals in de onderzoeksmethode is onderbouwd, betrouwbaar door het beoordelen van de bronnen aan de hand van onze selectie eisen. 
+    <br>
+    <br>
+    De resultaten van het testen en het literatuuronderzoek behandelen niet de toepassing van deze techniek in een militaire omgeving. Door de beperkingen die de maatregelen rond COVID-19 met zich mee bracht is het projectteam niet in de gelegenheid gekomen om het prototype te testen in operationele omgeving. Naar alle waarschijnlijkheid zal het prototype weldegelijk functioneren in deze omgeving. De implicaties die dit met zich meebrengt zijn beperkt, het betekent enkel dat het prototype verder moet worden ontwikkeld en getest in een operationele omgeving. 
+     <br>
+     <br>
+    Vervolgonderzoek dient te worden uitgevoerd om zeker te zijn van het volledig functioneren van deze techniek in een operationele omgeving. Hierbij dient ook aandacht te worden besteed aan de automatisering binnen het TITAAN-netwerk. Daarnaast kan, in de toekomst, als de opdrachtgever dat ambieert gekeken worden naar mogelijke slimme toepassingen voor datacompressie die momenteel nog niet geschikt zijn.
+    </p>
+    <br> 
+    <p>Het volledige onderzoeksrapport bestaande uit onderzoeksvragen, onderzoeksmethode, resultaten, conclusie en de discussie kunt u <a href="https://drive.google.com/file/d/12WEQlxkbMjhLFfu0ylWyEqSWSpXiQ6bF/view?usp=sharing">hier</a>  vinden.</p>
+  </p>
+  <!-- Smart Technology Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="Smart Technology"><b>Smart Technology</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-tech w3-xxlarge w3-text-light-grey"></i></p>
+        <p>ESP 32</p>
+        <br>
+        <p>Tijdens workshop een van smart technologie heb ik kennis gemaakt met de esp 32 en de progamering hiervan. in onderstaande video is te zien hoe de lichtsensor wordt geprogameerd om eerst aan de gaan bij te weinig licht. in het tweede fragament is te zien hoe deze juist uit gaat bij weinig licht. Het tweede fragagment is buiten de voorgeschreven opdracht uitgevoerd door de experimenteren met de gegeven code.</p>
+
+    </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-PCB w3-xxlarge w3-text-light-grey"></i></p>
+        <p>PCB ontwerpen</p>
+        <br>
+        <p>Na de workshops waarin er werd gewerkt aan het werkend krijgen van de code voor de ESP, zijn we begonnen met het maken van een Printed Circuit Board. Tijdens deze lessen werd er in Eagle gewerkt aan een schematicshe weergave van alle verbindingen van en naar de ESP. Het resultaat is te zien in de video van het werkende plantsysteem.</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-3d print w3-xxlarge w3-text-light-grey"></i></p>
+        <p>3D printen</p>
+        <br> 
+        <p>De kennis die is aangereikt tijdens de lessen van Smart Technology zijn niet direct te plaatsen in het project waar ik momenteel aan werk. Het onderwerp waar ik momenteel mee bezig ben bij Defensie is volledig software gericht en sluit daarmee niet direct aan op de eerste workshops van dit vak. Wel wordt er door middel van een les over additive manufacturing binnen Defensie meer gekeken naar de toepassing van dit vak in een bussinesscontext.</p>
+      </div>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VVU_u40Po1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3VbYu42YzvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Bovenstaande video laat zien hoe het plantsysteem gekoppeld aan het PCB water aan het pompen is. De code is zo geschrvenen dat er elke 20 seconde 1 seconde lang wordt gepompt tenzij het systeem ziet dat de grond vochtig genoeg is. In de andere video onder het onderdeel Smart Technology is te zien dat de lamp aan en uit gaat. Daarnaast is er tijdens de lessen ook gebruik gamaakt van de applicatie Blynk waarmee op afstand de sensoren worden uitgelezen en het lampje aan en uit kan worden gezet. Ondestaand ziet u een screenshot van de desbetreffende app met de waardes die op dat moment werde gelezen.</p>
+    <img src="Blynk app 2.jpg" alt="Me" style="width:50%"> <img src="Blynk app 3.jpg" alt="Me" style="width:50%">
+
+    
+
+  <!-- Smart Connection Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="Smart Connection"><b>Smart Connection</b></h4>
+  <p>Hier kunt u de verschillende API's vinden die gemaakt zijn tijdens de lessen Smart Connection. Daarnaast is deze website gebouwd om het portfolio te presenteren. Ik had als bedrijfskundige nog niet eerder gewerkt met HTML, css en javascript. Dit in gedachte houdent ben ik zeker tevreden met de website die ik heb gebouwd, ondanks dat deze niet perfect is heb ik het werken met deze techieken als zeer waardevol en leerzaam ervaren. Zo hebben we tijdens les 1 de mental model gemaakt waarin je de structuur van de front-end en back-end van een webpagina laat zien. Dit was tijdens de eerst workshop ongebrijpelijk voor me. Maar toen we deze in een latere workshop maakte ging dit al stukken beter zoals u onderstaand kunt zien.</p>
+  <img src="Mental Model Correct.png" alt="Me" style="width:70%">
+  <body>
+
+    <p>Klik hier om je huidige coördinaten te krijgen.</p>
+    
+    <button onclick="getLocation()">Klik hier</button>
+    
+    <p><strong>Note:</strong> The geolocation property is not supported in IE8 and earlier versions.</p>
+    
+    <p id="demo"></p>
+    
+    <script>
+    var x = document.getElementById("demo");
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;
+    }
+
+    </script>
+   <p>Ook is de openweathermap API uitgewerkt, deze API laat het huidige weer zien in een gewenste stad, in dit geval Nijmegen. Klik <a href="file:///Users/stijnvandenhoven/Documents/PlatformIO/Projects/PlantSystem/lib/test%20html/weather.html">hier</a> om naar de OpenWeather API te gaan.</p>
+   <br>
+   <p>Daarnaast is er ook een onderzoek uitgevoerd naar Artificial Intelligence (AI) en Machine Learning (ML). In dit korte literatuur onderzoek worden enkele militaire toepassingen van deze technieken toeglicht en worden de beperkingen van deze technieken besproken. Het onderzoek is <a href="https://docs.google.com/document/d/1JrqPLvXXsm0QR-eiy8ZBcuhBeo0Qzx5yabGtexi8Ojo/edit?usp=sharing">hier</a></p> te lezen.
+     
+    </body>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3></h3>
+      <p>Feedback, vragen of opmerkingen? Laat het via onderstaand formulier weten!</p>
+      
+    </div>
+<p><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfnxjn9GaEWH7v1utT8RppQbUHd39RqwwoG4vCm8FVbMyPAIg/viewform?embedded=true" width="640" height="538" frameborder="0" marginheight="0" marginwidth="0">Laden…</iframe></p>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
     </div>
 
-    <!-- FOR BOOTSTRAP -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </div>
+  </footer>
+  
+  
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 </body>
 </html>
